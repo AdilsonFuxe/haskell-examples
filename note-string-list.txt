@@ -1,0 +1,8 @@
+Prelude> [x | x <- "Hello, World?", not (elem x ",?")]
+"Hello World"
+
+Prelude> names = ["Adilson", "Zau", "Dumildes", "Braulio"]
+Prelude> names
+["Adilson","Zau","Dumildes","Braulio"]
+Prelude> [x | x <- names, not (elem x ["Zau"])]
+["Adilson","Dumildes","Braulio"]
